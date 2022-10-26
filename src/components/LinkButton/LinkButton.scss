@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+.linkBtn {
+    padding: 0;
+    height: auto;
+    min-height: auto;
+    border: 0px;
+    display: inline-block;
+    color: $primaryColor;
+    font-weight: inherit;
+    line-height: 1 !important;
+    &.gray {
+        color: $grayColor;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}

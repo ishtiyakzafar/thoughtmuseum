@@ -1,0 +1,69 @@
+.myclass {
+  position: relative;
+}
+
+.chat-section {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.postwithcomment {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+.postwithcomment p {
+  margin-bottom: unset;
+}
+
+.postwithcomment p::first-letter {
+  text-transform: capitalize;
+}
+
+.teacher-post {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  margin-right: 10px;
+}
+
+.comment .user-icon {
+  margin-left: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.post-with-comment {
+  position: relative;
+}
+
+.post-with-comment .ant-input {
+  height: 55px;
+  padding-right: 130px;
+}
+
+.comment-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.comment-btn .ant-btn {
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .postwithcomment {
+    padding: unset;
+  }
+  .postwithcomment .ant-collapse-content > .ant-collapse-content-box {
+    padding: 8px !important;
+  }
+}

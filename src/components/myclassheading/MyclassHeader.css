@@ -1,0 +1,43 @@
+.myclass-haeding {
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+    0px 2px 6px 2px rgb(60 64 67 / 15%);
+  height: 25vh;
+  position: relative;
+}
+
+.myclass-haeding img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 25vh;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.myclass-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.myclass-haeding h1 {
+  text-transform: capitalize;
+  font-size: 22px;
+  color: white;
+}
+
+.myclass-haeding .desc {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.myclass-haeding p {
+  color: white;
+}
+
+.myclass-haeding .name {
+  text-transform: capitalize;
+}

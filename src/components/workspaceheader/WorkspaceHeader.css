@@ -1,0 +1,23 @@
+.heading {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading h2 {
+  color: #4771bb;
+  font-size: 25px;
+}
+
+@media (max-width: 576px) {
+  .heading {
+    display: block;
+    text-align: center;
+    padding: 30px 0 40px;
+  }
+  .heading h2 {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+}

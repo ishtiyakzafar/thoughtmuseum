@@ -1,0 +1,52 @@
+.mini-chat {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.mini-chat:hover {
+  background: #4771bb;
+}
+
+.mini-chat:hover .last-msg {
+  color: white;
+}
+
+.mini-chat .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  margin-right: 5px;
+}
+
+.mini-chat .dot-online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #52c41a;
+  margin-right: 5px;
+}
+
+.mini-chat .content {
+  margin-left: 10px;
+}
+
+.mini-chat .content p {
+  margin-bottom: unset;
+}
+
+.mini-chat .content .name {
+  font-weight: 600;
+  color: black;
+}
+
+.mini-chat:focus {
+  background: #4771bb !important;
+}
+
+.mini-chat:focus .last-msg {
+  color: white;
+}

@@ -1,0 +1,8 @@
+.create-btn {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.create-btn .ant-btn {
+  width: 150px !important;
+}

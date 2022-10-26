@@ -1,0 +1,54 @@
+.signin-container {
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-form {
+  padding: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: white;
+  z-index: 99;
+}
+
+.signin-form h1 {
+  padding-bottom: 10px;
+}
+
+.submitItem {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-form-button {
+  width: 150px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.line p {
+  border-bottom: 1px solid #ddd;
+  width: 100px;
+}
+
+.login-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flip-form {
+  color: #4771bb;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signin-form {
+    padding: 20px;
+  }
+}

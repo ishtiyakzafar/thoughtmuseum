@@ -1,0 +1,8 @@
+.send-comment {
+  position: relative;
+}
+.send-comment .ant-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}

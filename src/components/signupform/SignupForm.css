@@ -1,0 +1,75 @@
+.signup-container {
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  padding: 30px 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: white;
+  z-index: 99;
+}
+
+.signup-form h1 {
+  padding-bottom: 10px;
+}
+
+.forgot-pass {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submitItem {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-form-button {
+  width: 150px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.line p {
+  border-bottom: 1px solid #ddd;
+  width: 100px;
+}
+
+.login-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.role {
+  text-align: center;
+}
+
+.signup-form .ant-radio-checked .ant-radio-inner {
+  border-color: #00cec9 !important ;
+}
+
+.signup-form .ant-radio-checked .ant-radio-inner:after {
+  background-color: #00cec9;
+}
+
+.signup-form .ant-radio:hover .ant-radio-inner {
+  border-color: #00cec9;
+}
+
+
+@media (max-width: 768px) {
+  .signup-form {
+    padding: 20px;
+  }
+  .signup-container {
+    height: 120vh;
+  }
+}

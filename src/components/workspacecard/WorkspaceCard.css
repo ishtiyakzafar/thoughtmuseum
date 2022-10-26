@@ -1,0 +1,58 @@
+.card {
+  width: 360px;
+  border-radius: 3px;
+  padding: 0 20px;
+  box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%),
+    0px 2px 6px 2px rgb(60 64 67 / 15%);
+  background: white;
+}
+
+.card .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.card .title h1 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.card .title .icon img {
+  margin-right: unset;
+  cursor: pointer;
+}
+
+.card .footer {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+.card .body {
+  padding: 10px;
+}
+
+.card .body .disc::first-letter {
+  text-transform: capitalize;
+}
+
+.card .footer p {
+  margin-bottom: 5px !important;
+}
+
+.update {
+  width: 120px;
+  height: 40px;
+}
+
+.update:hover {
+  color: #4771bb !important;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}

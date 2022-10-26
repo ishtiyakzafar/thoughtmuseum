@@ -1,0 +1,106 @@
+@import "../../variables.scss";
+.custome-input {
+  textarea {
+    &.ant-input {
+      height: 176px;
+    }
+  }
+  .ant-input {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-radius: 0;
+    box-shadow: inherit;
+    font-weight: 500;
+    resize: none;
+    &:hover,
+    &:focus {
+      border-right-width: 0 !important;
+    }
+  }
+  .ant-input-affix-wrapper {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    box-shadow: inherit;
+    height: 50px;
+    border-radius: 0;
+    &:hover {
+      border-right-width: 0px !important;
+    }
+    .ant-input-prefix {
+      margin-right: 11px;
+      @at-root .#{$rtl} & {
+        margin-left: 11px;
+        margin-right: 0;
+      }
+    }
+  }
+  .ant-select {
+    width: 100%;
+    outline: 0;
+    .ant-select-selector {
+      border-top-width: 0px;
+      border-right-width: 0px !important;
+      border-left-width: 0px;
+      border-radius: 0;
+      box-shadow: inherit !important;
+      font-weight: 500;
+    }
+    &:hover,
+    &:focus {
+      .ant-select-selector {
+        border-right-width: 0px !important;
+      }
+    }
+    &.ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input) {
+      .ant-select-selector {
+        border-right-width: 0px !important;
+      }
+    }
+    .ant-select-arrow {
+      color: $headColor;
+      font-size: 16px;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &--bordered {
+    .ant-input {
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-left-width: 1px;
+      &:hover,
+      &:focus {
+        border-width: 1px !important;
+      }
+    }
+    .ant-input-affix-wrapper {
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-left-width: 1px;
+      &:hover {
+        border-top-width: 1px !important;
+      }
+    }
+    .ant-select {
+      .ant-select-selector {
+        border-top-width: 1px;
+        border-right-width: 1px !important;
+        border-left-width: 1px;
+      }
+      &:hover,
+      &:focus {
+        .ant-select-selector {
+          border-right-width: 1px !important;
+        }
+      }
+      &.ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input) {
+        .ant-select-selector {
+          border-right-width: 1px !important;
+        }
+      }
+    }
+  }
+}
