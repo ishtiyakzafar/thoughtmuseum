@@ -13,7 +13,7 @@ import ChatWindow from "../../components/chatbox/ChatWindow";
 import MessangerDrawer from "../../components/messangerdrawer/MessangerDrawer";
 import { io } from "socket.io-client";
 
-const socket = io(process.env.REACT_APP_API_SERVICE_URL);
+const socket = io('http://thoughtmuseumapi-env-1.eba-wjdtxzm5.us-west-1.elasticbeanstalk.com');
 
 const DashboardHeader = () => {
   const [users, setUsers] = useState([]);

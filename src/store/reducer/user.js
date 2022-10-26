@@ -1,6 +1,6 @@
 import { loginCache } from "../cache";
 import { io } from "socket.io-client";
-const socket = io(process.env.REACT_APP_API_SERVICE_URL);
+const socket = io('http://thoughtmuseumapi-env-1.eba-wjdtxzm5.us-west-1.elasticbeanstalk.com');
 
 
 const initialState = {
@@ -29,7 +29,7 @@ export const actionLogout = (user, token) => {
 };
 
 export const getAllUser = (users) => {
-  return { type: GET_USERS, payload: users}
+  return { type: GET_USERS, payload: users }
 }
 
 export const updateUserAvailability = (data) => {
