@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const appServiceName = 'http://thoughtmuseumapi-env-1.eba-wjdtxzm5.us-west-1.elasticbeanstalk.com';
+const appServiceName = process.env.REACT_APP_API_SERVICE_URL;
 
 class RestfulProvider {
   constructor() {
@@ -36,7 +36,7 @@ class RestfulProvider {
         .catch((error) => {
           reject(
             error.response?.data?.message ||
-            "Server is down, please check after some time!!"
+              "Server is down, please check after some time!!"
           );
         });
     });

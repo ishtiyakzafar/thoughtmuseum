@@ -7,7 +7,7 @@ import { io } from "socket.io-client";
 import chatServ from "../../service/chatroom";
 import { useSelector } from "react-redux";
 
-const socket = io('http://thoughtmuseumapi-env-1.eba-wjdtxzm5.us-west-1.elasticbeanstalk.com');
+const socket = io(process.env.REACT_APP_API_SERVICE_URL);
 const { Search } = Input;
 
 const ChatWindow = ({ handleClose, item }) => {
@@ -77,7 +77,7 @@ const ChatWindow = ({ handleClose, item }) => {
   }, [messages]);
 
   const handleSendMessage = async (value) => {
-
+  
     let chatInfo = {
       message: value.message,
       isMedia: false,
